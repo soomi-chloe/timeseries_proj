@@ -1,0 +1,70 @@
+[
+  {
+    "id": "53bf64e2",
+    "name": "ARIMA 예측",
+    "datetime": "2026-05-10 13:54:22",
+    "model": "ARIMA",
+    "params": {
+      "p": 1,
+      "d": 1,
+      "q": 1
+    },
+    "metrics": {
+      "MAE": 119.19821682743171,
+      "MSE": 17284.520851572983,
+      "RMSE": 131.47060831825866,
+      "MAPE": 0.29843214930941103
+    },
+    "horizon": 1,
+    "freq": "MS",
+    "n_data": 144,
+    "preprocess_report": {
+      "n_missing": 0,
+      "missing_idx": [],
+      "outlier_method": "Hampel Filter",
+      "n_outliers": 6,
+      "outlier_idx": [
+        "1949-11",
+        "1952-03",
+        "1952-11",
+        "1955-11",
+        "1957-11",
+        "1959-11"
+      ],
+      "denoised": false
+    }
+  },
+  {
+    "id": "9f860130",
+    "name": "NaiveForecaster (베이스라인) 예측",
+    "datetime": "2026-05-10 13:49:38",
+    "model": "NaiveForecaster (베이스라인)",
+    "params": {
+      "strategy": "last"
+    },
+    "metrics": {
+      "MAE": 65.72619047619047,
+      "MSE": 5893.36111111111,
+      "RMSE": 76.76822982921458,
+      "MAPE": 0.16007062314163467
+    },
+    "horizon": 6,
+    "freq": "MS",
+    "n_data": 144,
+    "preprocess_report": {
+      "n_missing": 0,
+      "missing_idx": [],
+      "outlier_method": "Hampel Filter",
+      "n_outliers": 6,
+      "outlier_idx": [
+        "1949-11",
+        "1952-03",
+        "1952-11",
+        "1955-11",
+        "1957-11",
+        "1959-11"
+      ],
+      "denoised": true
+    }
+  }
+]
